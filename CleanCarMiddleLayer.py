@@ -7,10 +7,12 @@ import urllib3
 import json
 from GetRating import GetSentiment 
 from GetKeyWords import GetKeyWords
+from flask_cors import CORS
 
 app = Flask(__name__)
+cors = CORS(app, resources={r"*": {"origins": "*"}})
 api = Api(app)
-@crossdomain(origin='*')
+
 class question1(Resource):
     def post(self):
         body = json.loads(request.data)
