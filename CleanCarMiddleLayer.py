@@ -10,7 +10,7 @@ from GetKeyWords import GetKeyWords
 
 app = Flask(__name__)
 api = Api(app)
-
+@crossdomain(origin='*')
 class question1(Resource):
     def post(self):
         body = json.loads(request.data)
