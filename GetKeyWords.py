@@ -6,9 +6,9 @@ import json
 accessKey = '8f206924c68748519003ad6cbe417df8'
 
 uri = 'westcentralus.api.cognitive.microsoft.com'
-path = '/text/analytics/v2.0/sentiment'
+path = '/text/analytics/v2.0/keyPhrases'
 
-def GetSentiment (text):
+def GetKeyWords (text):
     documents = { 'documents': [{ 'id': '1', 'language': 'en', 'text': text }]}
     headers = {'Ocp-Apim-Subscription-Key': accessKey}
     conn = http.client.HTTPSConnection (uri)
