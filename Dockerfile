@@ -2,7 +2,7 @@ FROM python:3.6
 
 ADD . /app
 
-RUN pip install Flask_RESTful jsonify mysqlclient virtualenv urllib3 sqlalchemy
+RUN pip install Flask_RESTful jsonify mysqlclient virtualenv urllib3 sqlalchemy flask_cors
 
 EXPOSE 5000
 
