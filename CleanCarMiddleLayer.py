@@ -32,5 +32,5 @@ api.add_resource(question2, '/question2') # Route_2
 api.add_resource(question3, '/question3') # Route_3
 
 if __name__ == '__main__':
-     app.run(port='5000')
-     #app.run(host='0.0.0.0', port='5000')
+     #app.run(port='5000')
+     app.run(host='0.0.0.0', port='5000')

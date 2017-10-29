@@ -4,7 +4,7 @@ def ConnectDB(host, user, password, dbName):
     return _mysql.connect(host, user, password, dbName)
 
 def InsertRating(cnx, questionID, questionText, rating, customerID):
-    cnx.query("INSERT INTO Test VALUES ('TEst text lol');")
+    cnx.query("INSERT INTO RATINGS (ID,col2) VALUES(col2*2,15);")
     print("InsertRating in DB succeeded");
 
 def InsertKeyPhrase(cnx, customerID, keyPhrase):
